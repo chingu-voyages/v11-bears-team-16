@@ -9,3 +9,24 @@
     color: white;
     font-family: "Orbitron";
 }
+
+/*Layout body*/
+.layout-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    font-family: "Raleway";
+}
+footer a{
+    color: dodgerblue;
+    text-decoration: none;
+}
+footer p{
+    display: inline;
+}
