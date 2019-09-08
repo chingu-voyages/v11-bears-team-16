@@ -1,0 +1,16 @@
+{
+  "name": "algorithm-visualizer",
+  "version": "1.0.0",
+  "description": "An educational app that allows users to visualize sorting methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@willjw3, @Mxchaeltrxn, @denibulkashvili",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^2.15.9",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
