@@ -9,9 +9,10 @@ const Index = () => {
 
   return (
     <Layout>
-      <p style={{ padding: `20px 20px` }}>This is the home page</p>
-      <Link to="/binary-search">Binary Search</Link>
       <BinarySearch sortedList={sortedList} />
+      {/*
+        Can add a description of binary search here and maybe add a component that has text explaining what happens. I'm not sure.
+      */}
     </Layout>
   );
 };
