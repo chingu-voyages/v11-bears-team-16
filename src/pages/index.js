@@ -11,7 +11,6 @@ const Index = () => {
     <Layout>
       <p style={{ padding: `20px 20px` }}>This is the home page</p>
       <Link to="/binary-search">Binary Search</Link>
-      <BinarySearch sortedList={sortedList} />
     </Layout>
   );
 };
