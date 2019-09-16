@@ -1,0 +1,39 @@
+/*selectionsort.js BEGIN*/
+/*Body*/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+/*Inputs*/
+.form {
+    text-align: center;
+}
+label, button {
+    margin: 20px 10px
+}
+input {
+    margin: 10px 10px;
+}
+
+/*numbers display*/
+.numbers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 80px;
+    width: 60%;
+    background-color: black;
+    color: #39FF14;
+}
+
+.runstart {
+    width: 200px;
+    margin: auto;
+}
+/*selectionsort.js END*/
+
