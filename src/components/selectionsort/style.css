@@ -21,20 +21,6 @@
     margin-top: 35px;
 }
 
-div.tooltip {	
-    position: absolute;			
-    text-align: center;			
-    width: 73px;					
-    height: 38px;					
-    padding: 2px;				
-    font: 12px sans-serif;		
-    background: lightsteelblue;
-    color: black;	
-    border: 0px;		
-    border-radius: 8px;			
-    pointer-events: none;			
-}
-
 .graph-title {
     font-size: 17px;
 }

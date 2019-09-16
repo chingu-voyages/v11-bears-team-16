@@ -49,11 +49,6 @@ const Index = ({arr}) => {
 
     d3.select("svg").remove()
 
-    // var div = d3.select(canvas.current).append("div")
-    //     .attr("id", "tooltip")
-    //     .attr("class", "tooltip")
-    //     .style("opacity", 0);
-
     const svg = d3.select(canvas.current)
         .append("svg")
         .attr("width", '100%')
@@ -119,19 +114,7 @@ const Index = ({arr}) => {
         .attr('y', function (d, i) {
             return height - d + 30;
         })
-        // .on("mouseover", (d, i) => {
-        //     div.transition()
-        //     .duration(200)
-        //     .style("opacity", 0.9)
-        //     div.html("Year: " + years[i] + "<br>" + "Avg Temp: " + temps[i] + "&#176;C")
-        //     .style('left', (d3.event.pageX - 18) + 'px')
-        //     .style('top', (d3.event.pageY - 44) + 'px')
-        // })
-        // .on("mouseout", function (d) {
-        //     div.transition()
-        //         .duration(200)
-        //         .style("opacity", 0);
-        // });
+       
     }
     return (
         <div className="viz-wrapper">
