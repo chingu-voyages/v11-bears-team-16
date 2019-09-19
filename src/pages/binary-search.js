@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 import BinarySearch from "../components/algorithms/BinarySearch";
 
-const Index = () => {
+const BinarySearchPage = () => {
   const sortedList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   return (
@@ -17,4 +17,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default BinarySearchPage;
