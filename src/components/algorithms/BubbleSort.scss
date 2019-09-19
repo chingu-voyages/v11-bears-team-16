@@ -1,0 +1,25 @@
+.bars {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 30px;
+}
+
+.bar {
+  background-color: teal;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  padding-bottom: 8px;
+  transition: transform 2s ease;
+}
+
+.right {
+  transform: translateX(30px);
+}
+
+.left {
+  transform: translateX(-30px);
+}
