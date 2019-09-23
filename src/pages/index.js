@@ -1,14 +1,11 @@
-import React, { Fragment } from "react"
-import Layout from "../components/layout"
+import React from "react"
+import Layout from "../components/layout/layout"
 
-const Index = () => {
-    return (
-        <Fragment>
-            <Layout>
-                <p style={{padding: `20px 20px`}}>This is the home page</p>
-            </Layout>
-        </Fragment>
-    )
-}
+
+const Index = () => (
+    <Layout>
+        <p style={{padding: `20px 20px`}}>This is the home page</p>
+    </Layout>
+)
 
 export default Index

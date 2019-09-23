@@ -10,7 +10,7 @@ React and Node.js via [Gatsbyjs](https://www.gatsbyjs.org/)
 git clone https://github.com/chingu-voyages/v11-bears-team-16.git <your project directory>
 ```
 ```
-cd <your project directory> && yarn install or cd <your project directory> && npm install
+cd <your project directory> && yarn add or cd <your project directory> && npm install
 ```
 - install the Gatsby CLI if you haven't already
 ```
