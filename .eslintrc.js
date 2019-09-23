@@ -2,12 +2,9 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    jest: true
+    jest: true,
   },
-  extends: [
-    'airbnb',
-    "plugin:prettier/recommended"
-  ],
+  extends: ['airbnb'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -19,15 +16,13 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-  ],
+  plugins: ['react'],
   rules: {
     'max-len': 'off',
     'implicit-arrow-linebreak': 'off',
     'function-paren-newline': 'off',
     'object-curly-newline': 'off',
-    'arrow-parens': ['error', "as-needed", { "requireForBlockBody": true }],
+    'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
     semi: ['error', 'never'],
     'no-console': ['warn', { allow: ['info', 'warn', 'error'] }],
     'global-require': 'off',
@@ -39,4 +34,4 @@ module.exports = {
     indent: 'off',
     'no-use-before-define': 'off',
   },
-};
+}

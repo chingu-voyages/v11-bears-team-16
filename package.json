@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lintFix": "npm lint --fix --quiet"
+    "lint": "eslint --ext .js,.jsx . --ignore-path ./.eslintignore --fix --quiet"
   },
   "author": "@willjw3, @Mxchaeltrxn, @denibulkashvili",
   "license": "MIT",
@@ -29,7 +29,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm lintFix"
+      "pre-push": "npm run lintFix"
     }
   }
 }

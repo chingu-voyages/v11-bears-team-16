@@ -1,17 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: "Algorithm Visualizer"
-  },  
+    title: 'Algorithm Visualizer',
+  },
   plugins: [
       {
-          resolve: `gatsby-plugin-google-fonts`,
+          resolve: 'gatsby-plugin-google-fonts',
           options: {
             fonts: [
-              `Raleway`,
-              `Orbitron`,
-              `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
-            ]
-          }
+              'Raleway',
+              'Orbitron',
+              'source sans pro\:300,400,400i,700', // you can also specify font weights and styles
+            ],
+          },
         },
-  ]
+  ],
 }
