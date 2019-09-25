@@ -30,11 +30,13 @@ const BubbleSort = () => {
     setNumbers([...originalArray])
   }
 
-  // TODO: convert to reusable fucntion
-  const swap = arr => {
-    let temp = arr[leftIndex]
-    arr[leftIndex] = arr[rightIndex]
-    arr[rightIndex] = temp
+  // TODO: convert to reusable function
+  const swap = (arr) => {
+    const newArr = [...arr]
+    const temp = newArr[leftIndex]
+    newArr[leftIndex] = newArr[rightIndex]
+    newArr[rightIndex] = temp
+    return newArr
   }
 
   const updateIndexes = () => {
@@ -50,10 +52,10 @@ const BubbleSort = () => {
   // TODO: this should be inside a basic step() function that
   // would be shared between all algorithms
   const compareNumbers = () => {
-    let arr = [...numbers]
+    const arr = [...numbers]
     if (arr[leftIndex] > arr[rightIndex]) {
-      swap(arr)
-      setNumbers(arr)
+      const swappedArray = swap(arr)
+      setNumbers(swappedArray)
     }
     updateIndexes()
   }
@@ -69,8 +71,8 @@ const BubbleSort = () => {
 
   useEffect(() => {
     if (
-      JSON.stringify(numbers) === JSON.stringify(sortedArray) &&
-      rightIndex === numbers.length - 1
+      JSON.stringify(numbers) === JSON.stringify(sortedArray)
+      && rightIndex === numbers.length - 1
     ) {
       pauseAlgorithm()
     }

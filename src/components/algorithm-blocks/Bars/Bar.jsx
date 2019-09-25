@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 
 const Bar = ({ color, size }) => (
@@ -17,5 +18,10 @@ const Bar = ({ color, size }) => (
     {size}
   </div>
 )
+
+Bar.propTypes = {
+  color: PropTypes.string.isRequired,
+  size: PropTypes.number.isRequired,
+}
 
 export default Bar

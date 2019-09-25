@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React, { useEffect, useState } from 'react'
 import { animated, config, useSpring } from 'react-spring'
 import Bar from './Bar'
@@ -21,6 +22,12 @@ const AnimatedBar = ({ index, color, size }) => {
       <Bar color={color} size={size} />
     </animated.div>
   )
+}
+
+AnimatedBar.propTypes = {
+  index: PropTypes.number.isRequired,
+  color: PropTypes.string.isRequired,
+  size: PropTypes.number.isRequired,
 }
 
 export default AnimatedBar
