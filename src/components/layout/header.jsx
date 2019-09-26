@@ -1,24 +1,40 @@
-import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import './components.css'
+import React from 'react'
+import styled from 'styled-components'
+import { Colors } from '../shared/Colors'
+
+const HeaderWrapper = styled('div')`
+  height: 80px;
+  padding: 20px 20px;
+`
+
+const Title = styled('h1')`
+  width: fit-content;
+  background: ${Colors.gradient};
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(${Colors.shadow});
+  padding: 0px;
+`
 
 const Header = () => {
-    const { site } = useStaticQuery(
-        graphql`
-          query {
-              site {
-                  siteMetadata {
-                    title 
-                  }
-              }
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
           }
-        `,
-    )
-    return (
-      <div className="header-wrapper">
-        <h2>{site.siteMetadata.title}</h2>
-      </div>
-    )
+        }
+      }
+    `,
+  )
+  return (
+    <HeaderWrapper>
+      <Title>{site.siteMetadata.title}</Title>
+    </HeaderWrapper>
+  )
 }
 
 export default Header
