@@ -1,6 +1,6 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import "./components.css"
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import './components.css'
 
 const Header = () => {
     const { site } = useStaticQuery(
@@ -12,12 +12,12 @@ const Header = () => {
                   }
               }
           }
-        `
+        `,
     )
     return (
-        <div className="header-wrapper">
-            <h2>{site.siteMetadata.title}</h2>
-        </div>
+      <div className="header-wrapper">
+        <h2>{site.siteMetadata.title}</h2>
+      </div>
     )
 }
 

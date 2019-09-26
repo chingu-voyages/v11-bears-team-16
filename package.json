@@ -4,14 +4,34 @@
   "description": "An educational app that allows users to visualize sorting methods",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js,.jsx . --ignore-path ./.eslintignore --fix --quiet"
   },
   "author": "@willjw3, @Mxchaeltrxn, @denibulkashvili",
   "license": "MIT",
   "dependencies": {
     "gatsby": "^2.15.9",
     "gatsby-plugin-google-fonts": "^1.0.1",
+    "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-react-app": "^5.0.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^3.0.5",
+    "prettier": "^1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint"
+    }
   }
 }

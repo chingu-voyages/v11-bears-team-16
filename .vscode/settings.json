@@ -1,0 +1,23 @@
+{
+  "git.ignoreLimitWarning": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.packageManager": "yarn",
+  "eslint.validate": [
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    },
+  ]
+}
