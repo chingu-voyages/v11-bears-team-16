@@ -14,7 +14,7 @@ const Title = styled('h1')`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(${Colors.shadow});
+  filter: drop-shadow(${Colors.textShadow});
   padding: 0px;
 `
 

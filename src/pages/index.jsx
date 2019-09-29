@@ -7,7 +7,8 @@ const CardWrapper = styled('div')`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 650px;
+  width: 700px;
+  margin: 25vh auto;
 `
 
 const HomePage = () => (

@@ -7,15 +7,28 @@ const Wrapper = styled('div')`
   width: 300px;
   height: 200px;
   background: ${Colors.primaryLight};
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: ${Colors.boxShadow};
+  border-radius: 5px;
+  cursor: pointer;
 
-  p {
-    margin: 0 auto;
+  &:hover {
+    box-shadow: ${Colors.boxHoverShadow};
   }
+`
+
+const Title = styled('h2')`
+  font-family: 'Permanent Marker';
+  font-size: 1.6rem;
+  text-shadow: ${Colors.textShadow};
 `
 
 const Card = ({ title }) => (
   <Wrapper>
-    <p>{title}</p>
+    <Title>{title}</Title>
   </Wrapper>
 )
 
