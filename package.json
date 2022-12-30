@@ -10,7 +10,7 @@
   "author": "@willjw3, @Mxchaeltrxn, @denibulkashvili",
   "license": "MIT",
   "dependencies": {
-    "gatsby": "^2.15.9",
+    "gatsby": "^2.32.13",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
